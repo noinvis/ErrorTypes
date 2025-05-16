@@ -1,0 +1,76 @@
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/Roboto-Regular.ttf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    user-select: none;
+}
+body {
+	background: linear-gradient(-45deg, #ffffff, #e4ff6d, #072530, #156b57);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+	height: 100vh;
+}
+.reference{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    gap: 20px;
+    text-align: center;
+    background: linear-gradient(
+        to right,
+        #fff 20%,
+        #000 80%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 500% auto;
+    animation: textShine 5s ease-in-out infinite alternate;
+}
+.reference__head{
+    font-size: 2rem;
+}
+.reference__body{
+    font-size: 1.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+@keyframes textShine {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
