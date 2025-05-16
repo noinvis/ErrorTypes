@@ -251,3 +251,67 @@
         return result
     }
 }
+
+{
+    // 25 - code (Reverse words)
+    // Sharti: Complete the function that accepts a string parameter, and reverses each word in the string. All spaces in the string should be retained.
+
+    function reverseWords(str) {
+        return str.split(" ").map(word => word.split("").reverse().join("")).join(" ")
+    }
+}
+
+{
+    // 26 - code (Odd or Even?)
+    // Sharti: Given a list of integers, determine whether the sum of its elements is odd or even. Give your answer as a string matching "odd" or "even". If the input array is empty consider it as: [0] (array with a zero).
+
+    function oddOrEven(array) {
+        let quest = array.reduce((sum, num) => sum + num, 0);
+        return quest % 2 === 0 ? "even" : "odd";
+    }
+}
+
+{
+    // 27 - code (Removing Elements)
+    // Sharti: Take an array and remove every second element from the array. Always keep the first element and start removing with the next element.
+
+    function removeEveryOther(arr){
+        return arr.filter((element, index) => index % 2 === 0);
+    }
+}
+
+{
+    // 28 - code (Array plus array)
+    // Sharti: I'm new to coding and now I want to get the sum of two arrays... Actually the sum of all their elements. I'll appreciate for your help.
+
+    function arrayPlusArray(arr1, arr2) {
+        return arr1.concat(arr2).reduce((sum, num) => sum + num)
+    }
+}
+
+{
+    // 29 - code (Sum Mixed Array)
+    // Sharti: Given an array of integers as strings and numbers, return the sum of the array values as if all were numbers. Return your answer as a number.
+
+    function sumMix(x){
+        return x.reduce((sum, num) => sum + Number(num), 0)
+    }
+}
+
+{
+    // 30 - code (Friend or Foe?)
+    // Sharti: If a name has exactly 4 letters in it, you can be sure that it has to be a friend of yours! Otherwise, you can be sure he's not...
+
+    function friend(friends){
+        return friends.filter(name => name.length === 4);
+    }
+}
+
+{
+    // 31 - code (List Filtering)
+    // Sharti: In this kata you will create a function that takes a list of non-negative integers and strings and returns a new list with the strings filtered out.
+
+    function filter_list(l) {
+        return l.filter(item => item === Number(item));
+    }
+}
